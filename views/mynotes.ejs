@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+    body {
+      background-image: url('/images/bg.jpg');
+      background-repeat: no-repeat;
+        background-attachment: fixed;
+      background-position: 100% 100%;
+    }
+    .header{
+        background-color: #192a56;
+        padding: 0.5px;
+        text-align: center;
+        color:#fbc531
+    }
+    .header2{
+        background-color: #273c75;
+        width: 100%;
+        float: left;
+        padding: 5px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+        
+    }
+    .headimg{
+        width: 4%;
+        float: left;
+    }
+    .hedingline{
+        width:76%;
+        float: left;
+        font-family: Crosshatcher;
+        color:#fbc531;
+        
+    }
+    .btn1{
+        width: 10%;
+        float: left;
+        
+    }
+    .btn2{
+        width: 10%;
+        float: left;
+        
+
+    }
+    .hb{
+        
+        color:  #273c75;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+    }
+    .mt{
+        background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+
+    }
+    .profilename{
+      float:right;
+    }
+    .profilepicture{
+      float: right;
+      padding-left: 20px;
+      border-radius: 2px;
+    }
+    .imgs{
+      box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+    }
+    .imgs:hover{
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+    }
+    .nav{
+      width: 100%;
+      background-color: #f5f6fa;
+      border:0.25px solid #2f3640;
+    }
+    .leftnav{
+      width: 50%;
+    }
+    .anav{
+      width: 20%;
+      float: left;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .anav:hover{
+      background-color: #00a8ff;
+      color: #f5f6fa;
+      text-decoration: none;
+      
+    }
+    .onpage{
+      background-color: #00a8ff;
+      color: #f5f6fa;
+      text-decoration: none;
+
+    }
+    .footer{
+      position:fixed;
+    bottom:0;
+      background-color:#273c75;
+      width: 100%;
+      border: 0.5px solid #192a56;
+      color: aliceblue;
+
+    }
+    .leftfoot{
+      width: 50%;
+      float: left;
+      padding-left: 20px;
+      font-family:olivia ;
+      border-right: 6px solid green;
+      background-color: #192a56;
+      color: #fbc531;
+      padding-top: 5px;
+      font-size: 20px;
+
+    }
+    .rightfoot{
+      padding-top: 2px;
+      width: 50%;
+      float: left;
+      color: #fbc531;
+      
+      background-color: #192a56;
+      padding-left: 20px;
+      margin-bottom: 0px;
+  
+    }
+    .ftxt{
+      width: 33%;
+      float: left;
+    }
+
+    .search{
+      width: 45%;
+      float: left;
+      padding-top: 7px;
+      padding-left: 15px;
+    }
+    .labellist{
+      padding-top: 4px;
+      width: 45%;
+      float: left;
+    }
+    .buttonnav{
+      padding-top: 7px;
+      width: 10%;
+      float: left;
+    }
+    .rightnav{
+      width: 50%;
+    }
+
+    .card{
+			
+      width:20%;
+      float: left;
+      margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+            0 2px 2px rgba(0,0,0,0.12), 
+            0 4px 4px rgba(0,0,0,0.12), 
+            0 8px 8px rgba(0,0,0,0.12),
+            0 16px 16px rgba(0,0,0,0.12);
+    
+  }
+  .card:hover{
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.521), 
+            0 2px 2px rgba(255, 255, 255, 0.521), 
+            0 4px 4px rgba(255, 255, 255, 0.521), 
+            0 8px 8px rgba(255, 255, 255, 0.521),
+            0 16px 16px rgba(255, 255, 255, 0.521);
+
+  }
+  .cardbody{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family:cursive;
+      
+  }
+  .cardh{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+  }
+
+  .search2{
+    margin-top: 2px;
+    padding: 6px;
+    border: 0.5  solid #bdc3c7;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+    
+    
+    
+    </style>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- HEADER PART -->
+    <div class="header2">
+        <div class="headimg">
+        <img src="/images/logo.png" width="40px" height="40px">
+        </div>
+        <div class="hedingline">
+        <h3>TUTODESK</h3>
+        </div>
+        <div class="profilepicture">
+          <img src="/images/<%= result[0].image %>" class="rounded imgs" width="40px" height="40px">
+        </div>
+        <div class="profilename">
+        <button type="button" class="btn btn-warning hb" data-toggle="modal" data-target="#profileModal"><%= result[0].name %></button>
+      </div> 
+        <!-- Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"><%=result[0].username %></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                  </div>
+                      <div class="modal-body">
+                      <img src="/images/<%= result[0].image %>" class="rounded mx-auto d-block imgs" width="300" height="300">
+                          <br>
+                          <h4 align="center"><%=result[0].name %></h4>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="/editprofile?id=<%=result[0].id %>" class="btn btn-warning hb">Edit Profile</a>
+                          <a href="/logout" class="btn btn-warning hb">Logout</a>
+                      </div>
+                  </div>
+          </div>
+      </div>
+    </div>
+    <!-- HEADER PART END -->
+    <!-- Navigation Bar-->
+    <nav class="nav">
+      <div class="leftnav">
+        <a href="/" class="anav"><b>Home</b></a>
+        <a href="/mybooks?id=<%=result[0].id %>" class="anav"><b>My Books</b></a>
+        <a href="#" class="anav  onpage"><b>My Notes</b></a>
+        <a href="/myaudiobooks?id=<%=result[0].id %>" class="anav"><b>My Audiobooks</b></a>
+        <a href="/tutodeskapps?id=<%=result[0].id %>" class="anav"><b>Tutodesk Apps</b></a>
+      </div>
+      <div class="rightnav">
+
+        <div class="search">
+          
+          <form action="/mynotes/search?id=<%=result[0].id %>" method="post" enctype="multipart/form-data">
+            <center>
+            <input class="search2" type="search" placeholder="Search Notes" aria-label="Search" name="search">
+            <button  type="submit" class="btn btn-warning hb">🔍</button>
+          </center>
+          </form>
+        
+        </div>
+
+        <div class="labellist">
+          <select class="custom-select my-1 mr-sm-2" id="menu1">
+            <option value="/mynotes?id=<%=result[0].id %>">Select Label</option>
+            <option value="/mynotes/y?id=<%=result[0].id %>" style="background-color:#fbc531">Yellow</option>
+            <option value="/mynotes/r?id=<%=result[0].id %>" style="background-color:#e84118">Red</option>
+            <option value="/mynotes/b?id=<%=result[0].id %>" style="background-color:#00a8ff">Blue</option>
+            <option value="/mynotes/g?id=<%=result[0].id %>" style="background-color:#4cd137">Green</option>
+            <option value="/mynotes?id=<%=result[0].id %>">All</option>
+
+          </select>
+        </div>
+
+        <div class="buttonnav">
+          <center>
+          <button type="button" class="btn btn-warning hb" data-toggle="modal" data-target="#addnotes" title="Add Notes"><b>+</b></button>
+        </center>
+        </div>
+
+      </div>
+
+    </nav>
+    <form action="/mynotes/add?id=<%=result[0].id %>" method="post" enctype="multipart/form-data">
+    <div class="modal fade" id="addnotes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Notes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            
+              <div class="form-group">
+                <label for="labelc">label</label>
+                <select id="labelc" class="form-control" name="label">
+	                <option selected value="1" style="background-color:#fbc531">Yellow</option>
+                  <option value="2" style="background-color:#e84118">Red</option>
+                  <option value="3" style="background-color:#00a8ff">Blue</option>
+                  <option value="4" style="background-color:#4cd137">Green</option>
+                </select>
+              </div>
+            
+              <div class="form-group">
+            
+                <input type="text" name="titlen" class="form-control" placeholder="Title:">
+            </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" name="Notes" placeholder="Add text here"></textarea>
+            </div>
+
+
+
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-warning hb">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="noteslist">
+    
+    <% notes.map(function(item,index){ %>
+      <div class="card" style="background-color: <%=item.fg%>;"   >
+        <div class="cardh" style="background-color: <%=item.bg%>;">
+          <h4><%=item.title %></h4>
+
+
+        </div>
+        <div class="cardbody" style="background-color:<%=item.fg%>;">
+          <p><%=item.notes %></p>
+        </div>
+        <hr>
+        <button type="button" style="width: 20%; margin: 5px;" class="btn btn-dark hb" data-toggle="modal" data-target="#notesedit<%=item.id %>" title="Add Notes"><b>✏️</b></button>
+
+      </div>
+
+      <form action="/mynotes/edit?id=<%=result[0].id %>" method="post" enctype="multipart/form-data">
+        <div class="modal fade" id="notesedit<%=item.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Notes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+    
+                <input type="text" readonly="true" name="noteid" value="<%=item.id %>" class="form-control"></textarea><br>
+                <input type="text" readonly="true" name="noteun" value="<%=result[0].username %>" class="form-control"></textarea>
+
+                <br>
+                
+                  <div class="form-group">
+                    <label>Title:</label>
+                    <input type="text" name="titlen" class="form-control" value="<%=item.title %>" placeholder="Title:" >
+                </div>
+                  <div class="form-group">
+                    <label>Content:</label>
+                    <textarea class="form-control" rows="3" name="Notes" placeholder="Add text here" ><%=item.notes %></textarea>
+                </div>
+    
+    
+    
+              </div>
+              <div class="modal-footer">
+                <input type="submit" name="btn" value="Edit" class="btn btn-warning hb">
+                <input type="submit" name="btn" value="Delete" class="btn btn-warning hb">
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    <% }) %>
+
+  </div>
+
+  
+
+    <!-- Navigation Bar end-->
+    <footer class="footer">
+        <center>
+          <p style="font-family:Crosshatcher ; color: #fbc531;">Tutodesk</p>
+        </center>
+  
+        <div class="leftfoot">
+  
+          <h4>Created by:</h4>
+          <p class="ftxt">Devansh Sharma: &nbsp<a href="https://www.facebook.com/profile.php?id=100028157047373" class="fa fa-facebook"></a> &nbsp <a href="https://twitter.com/DevanshSpeak" class="fa fa-twitter"></a> &nbsp <a href="https://www.instagram.com/baba_bawandarnath_2.0/" class="fa fa-instagram"></a></p>
+          <p class="ftxt">Nishant Rajput:&nbsp <a href="https://www.facebook.com/nishuuurajputbvn.5" class="fa fa-facebook"></a> &nbsp <a href="https://twitter.com/Nishant37858506" class="fa fa-twitter"></a> &nbsp <a href="https://www.instagram.com/nishaannt_59/" class="fa fa-instagram"></a></p>
+          <p class="ftxt">Rahul Rajput:&nbsp<a href="https://www.facebook.com/profile.php?id=100041756630338" class="fa fa-facebook"> </a> &nbsp <a href="https://twitter.com/RahulSi34904143" class="fa fa-twitter"></a>&nbsp <a href="#" class="fa fa-instagram"></a></p>
+  
+        </div>
+        <div class="rightfoot">
+          <p>Tutodesk &#169; 2020</p>
+          <a href="/aboutus">About-us</a>
+          <br>
+        </div>
+        
+      </footer>
+
+      <script type="text/javascript">
+        var urlmenu = document.getElementById('menu1');
+        urlmenu.onchange = function() {
+        document.location.href = this.value;
+        };
+        </script>
+</body>
+</html>

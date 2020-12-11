@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+    body {
+      background-image: url('/images/bg.jpg');
+      background-repeat: no-repeat;
+        background-attachment: fixed;
+      background-position: 100% 100%;
+    }
+    .header{
+        background-color: #192a56;
+        padding: 0.5px;
+        text-align: center;
+        color:#fbc531
+    }
+    .header2{
+        background-color: #273c75;
+        width: 100%;
+        float: left;
+        padding: 5px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+        
+    }
+    .headimg{
+        width: 4%;
+        float: left;
+    }
+    .hedingline{
+        width:76%;
+        float: left;
+        font-family: Crosshatcher;
+        color:#fbc531;
+        
+    }
+    .btn1{
+        width: 10%;
+        float: left;
+        
+    }
+    .btn2{
+        width: 10%;
+        float: left;
+        
+
+    }
+    .hb{
+        
+        color:  #273c75;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+    }
+    .mt{
+        background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+
+    }
+    .profilename{
+      float:right;
+    }
+    .profilepicture{
+      float: right;
+      padding-left: 20px;
+      border-radius: 2px;
+    }
+    .imgs{
+      box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+    }
+    .imgs:hover{
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+    }
+    .nav{
+      width: 100%;
+      background-color: #f5f6fa;
+      border:0.25px solid #2f3640;
+    }
+    .leftnav{
+      width: 50%;
+    }
+    .anav{
+      width: 20%;
+      float: left;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .anav:hover{
+      background-color: #00a8ff;
+      color: #f5f6fa;
+      text-decoration: none;
+      
+    }
+    .onpage{
+      background-color: #00a8ff;
+      color: #f5f6fa;
+      text-decoration: none;
+
+    }
+    .footer{
+      position:fixed;
+    bottom:0;
+      background-color:#273c75;
+      width: 100%;
+      border: 0.5px solid #192a56;
+      color: aliceblue;
+
+    }
+    .leftfoot{
+      width: 50%;
+      float: left;
+      padding-left: 20px;
+      font-family:olivia ;
+      border-right: 6px solid green;
+      background-color: #192a56;
+      color: #fbc531;
+      padding-top: 5px;
+      font-size: 20px;
+
+    }
+    .rightfoot{
+      padding-top: 2px;
+      width: 50%;
+      float: left;
+      color: #fbc531;
+      
+      background-color: #192a56;
+      padding-left: 20px;
+      margin-bottom: 0px;
+  
+    }
+    .ftxt{
+      width: 33%;
+      float: left;
+    }
+    
+    </style>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- HEADER PART -->
+    <div class="header2">
+        <div class="headimg">
+        <img src="/images/logo.png" width="40px" height="40px">
+        </div>
+        <div class="hedingline">
+        <h3>TUTODESK</h3>
+        </div>
+        <div class="profilepicture">
+          <img src="/images/<%= result[0].image %>" class="rounded imgs" width="40px" height="40px">
+        </div>
+        <div class="profilename">
+        <button type="button" class="btn btn-warning hb" data-toggle="modal" data-target="#profileModal"><%= result[0].name %></button>
+      </div> 
+        <!-- Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"><%=result[0].username %></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                  </div>
+                      <div class="modal-body">
+                      <img src="/images/<%= result[0].image %>" class="rounded mx-auto d-block imgs" width="300" height="300">
+                          <br>
+                          <h4 align="center"><%=result[0].name %></h4>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="/editprofile?id=<%=result[0].id %>" class="btn btn-warning hb">Edit Profile</a>
+                          <a href="/logout" class="btn btn-warning hb">Logout</a>
+                      </div>
+                  </div>
+          </div>
+      </div>
+    </div>
+    <!-- HEADER PART END -->
+    <!-- Navigation Bar-->
+    <nav class="nav">
+      <div class="leftnav">
+        <a href="/" class="anav"><b>Home</b></a>
+        <a href="/mybooks?id=<%=result[0].id %>" class="anav"><b>My Books</b></a>
+        <a href="/mynotes?id=<%=result[0].id %>" class="anav"><b>My Notes</b></a>
+        <a href="/myaudiobooks?id=<%=result[0].id %>" class="anav"><b>My Audiobooks</b></a>
+        <a href="#" class="anav  onpage"><b>Tutodesk Apps</b></a>
+      </div>
+      <div class="rightnav">
+
+      </div>
+    </nav>
+
+    <!-- Navigation Bar end-->
+
+    <footer class="footer">
+        <center>
+          <p style="font-family:Crosshatcher ; color: #fbc531;">Tutodesk</p>
+        </center>
+  
+        <div class="leftfoot">
+  
+          <h4>Created by:</h4>
+          <p class="ftxt">Devansh Sharma: &nbsp<a href="https://www.facebook.com/profile.php?id=100028157047373" class="fa fa-facebook"></a> &nbsp <a href="https://twitter.com/DevanshSpeak" class="fa fa-twitter"></a> &nbsp <a href="https://www.instagram.com/baba_bawandarnath_2.0/" class="fa fa-instagram"></a></p>
+          <p class="ftxt">Nishant Rajput:&nbsp <a href="https://www.facebook.com/nishuuurajputbvn.5" class="fa fa-facebook"></a> &nbsp <a href="https://twitter.com/Nishant37858506" class="fa fa-twitter"></a> &nbsp <a href="https://www.instagram.com/nishaannt_59/" class="fa fa-instagram"></a></p>
+          <p class="ftxt">Rahul Rajput:&nbsp<a href="https://www.facebook.com/profile.php?id=100041756630338" class="fa fa-facebook"> </a> &nbsp <a href="https://twitter.com/RahulSi34904143" class="fa fa-twitter"></a>&nbsp <a href="#" class="fa fa-instagram"></a></p>
+  
+        </div>
+        <div class="rightfoot">
+          <p>Tutodesk &#169; 2020</p>
+          <a href="/aboutus">About-us</a>
+          <br>
+        </div>
+        
+      </footer>
+
+  
+</body>
+</html>
