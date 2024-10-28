@@ -1,9 +1,10 @@
 var mysql=require('mysql');
+// Use your credentials here
 var pool=mysql.createPool({
-    host:'localhost',
-    port:3306,
-    user:'root',
-    password:'pandit',
+    host:'',
+    port:0,
+    user:'',
+    password:'',
     database:'tutodesk2',
     connectionLimit:'100'
 });
